@@ -1,7 +1,7 @@
 function PrimeraCaja() {
   return (
     <div className="fila">
-      <div className="caja segunda">
+      <div className="caja">
         <h1>Hola mundo</h1>
       </div>
       <div className="caja segundacaja">

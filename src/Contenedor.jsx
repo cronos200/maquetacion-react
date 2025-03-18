@@ -1,13 +1,22 @@
+import ContenedorVerde from './ContenedorVerde';
+import ContenedorPurpura from './ContenedorPurpura';
 import PrimeraCaja from './PrimeraCaja'
-import Segundacaja from './Segundacaja';
+import SegundoContenedor from './SegundoContenedor';
 
-function Contenedor(){
-    return(
-        <div className="contenedor">
-            <PrimeraCaja />
-            <Segundacaja />
-        </div>
+function Contenedor() {
+    return (
+      <div className="contenedor">
+        <PrimeraCaja />
+        <main>
+          <SegundoContenedor />
+          <div className="columna-purpura">
+            <ContenedorPurpura />
+            <ContenedorPurpura />
+          </div>
+        </main>
+        <ContenedorVerde />
+      </div>
     )
-}
+  }
 
 export default Contenedor;
